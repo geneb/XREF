@@ -1,0 +1,92 @@
+>> README file for Don Malin's Cross Reference Program (XREF), version 2.23 <<
+
+The following is a list of enhancements and corrections made to the XREF
+software since its initial 1.00 release.  Even if you do not have an earlier
+version, please read the following Enhancements section since these new
+features may not be mentioned in your manual.
+
+
+                              ENHANCEMENTS
+                              ============
+
+1)  A VERY IMPORTANT new utility STR2CODE.COM has been added to the package.
+    This source code pre-processor program can be used to remove quoted
+    strings from the DGROUP memory area where BASIC normally stores them thus
+    freeing up extra string and variable space.  Please see the manual
+    addendum file STR2CODE.DOC for more information.
+
+2)  As of version 2.00 XREF can now handle almost unlimited program sizes.
+    The previous restrictions of 2425 objects and 32766 references have been
+    changed to 32766 objects and over 2 billion references or available disk
+    space.  This version uses disk based algorithms so available memory is no
+    longer the limiting factor however 512k is still recommended for maximum
+    performance but only 256k is required.
+
+3)  The case of object names is now preserved in all reports.
+
+4)  A new menu choice has been added to the "File" menu and the first choice
+    has been changed.  The first menu item is now "Open .MAK Definition
+    File..." and will display a list of QuickBASIC make files (*.MAK) to be
+    opened and processed.  The second choice now reads "Open Source Module..."
+    and can be used to open and process a single module only.
+
+5)  XREF will now omit BASIC keyword and numeric constant objects and
+    references from object databases if they are not selected on any reports.
+    This allows XREF to handle much larger programs than previous versions,
+    since that information required a considerable amount of memory.  To
+    exclude either BASIC keywords, numeric constants, or both from the object
+    database, be sure that they are not checked on any of the Report menu
+    options.  Note that if an object type is excluded, you cannot later use
+    the object database to report objects of that type.
+
+6)  An additional command line switch has been added - /NOHI.  If you have a
+    monitor that cannot display high intensity colors (many laptops) and you
+    cannot see menu "hot letters" and some areas of the screen, use this
+    switch to force contrasting low intensity colors.
+
+    ie.  XREF /B/NOHI
+
+7)  Double clicking the mouse on "Report" or "Output" menu choices will now
+    check (û) the choice without displaying the associated dialog box.
+
+8)  A new option box has been added to the "Source Listing Setup" dialog box.
+    You can use this to specify how INCLUDE$ files are shown on source
+    listings.  The first choice - "Expand all INCLUDE files" causes the
+    contents of all INCLUDE$ files to be listed whenever they are encountered
+    in the source.  The second option - "Expand INCLUDE files only once"
+    specifies that an INCLUDE$ files contents be listed only when it is first
+    encountered in the source.  Subsequent references to the file will be
+    ignored.  The last option - "Don't expand INCLUDE files" indicates that
+    INCLUDE$ files are not to be expanded at all.  Note that the contents of
+    all INCLUDE$ files will always be examined whenever they are encountered
+    and the above options only effect the generated listing not reports.
+
+9)  A new check box has been added to the -"Procedure Tree Setup" dialog box.
+    You can now specify that external procedures should be omitted from the
+    Procedure Tree by checking the - "Exclude EXTERNAL procedure names from
+    tree" check box.
+
+10) Two new fields have been added to the "Options" dialog box on the
+    "Report" menu. 
+
+    a. "Maximum objects/module" can be used to increase the number of objects
+       that can be stored in memory for any one module.  If you have a very
+       large module with many different variables or line numbers, you may
+       exceed XREF's default limit of 2000.  In this case, you can increase
+       this number to a maximum of 3000 objects/module.  Note that there is a
+       speed penalty imposed by an increase.
+
+    b. "Maximum tokens/logical line" can be used to increase the number of
+       tokens that can be parsed from any logical line.  A token is any word
+       or delimiter in the code section of a line (comments don't count).  A
+       logical line is either a physical program line or the sum of all
+       program lines connected with the underscore character "_".  Programs
+       that use the underscore character to continue many lines (such as when
+       using the FIELD statement) may exceed XREF's default maximum of 300.
+       In this case, you can increase this number to a maximum of 500
+       tokens/line.  Note that there is a speed penalty imposed by an
+       increase.
+
+11) XREF.EXE previously had a limit of 100 modules that could be read from a
+    .MAK file.    This limit has been removed.
+   

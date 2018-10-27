@@ -1,0 +1,45 @@
+# CSMAKE.EXE/MAKE.EXE/NMAKE.EXE Description File for the XREF.EXE program.
+
+ProPath= c:\pro\
+
+# If you are using MAKE.EXE, remove the following line.
+ALL: XRef.exe
+
+XRef.ob$: xref.bas XRefCnst.bi XRefType.bi XRefComn.bi
+  str2code xref;
+  BC XRef.ba$ /s/o/ah/ot;
+
+XRefMisc.ob$:  XRefMisc.BAS XRefCnst.bi XRefType.bi XRefComn.bi
+  str2code XRefMisc;
+  BC XRefMisc.ba$ /s/o/ah;
+
+XRefDial.ob$:  XRefDial.bas XRefCnst.bi DialType.bi
+  str2code XRefDial;
+  BC XRefDial.ba$ /s/o;
+
+GetFile.ob$:  GetFile.bas DialType.bi
+  str2code GetFile;
+  BC GetFile.ba$ /s/o;
+
+Dialog.ob$:  Dialog.bas DialType.bi
+  str2code Dialog;
+  BC Dialog.ba$ /s/o;
+
+XRefRpt.ob$:  XRefRpt.bas XRefCnst.bi XRefType.bi XRefComn.bi
+  str2code XRefRpt;
+  BC XRefRpt.ba$ /s/o/ah/ot;
+
+QMap.obj:  QMap.BAS XRefCnst.bi XRefType.bi XRefComn.bi
+  BC QMap.bas /s/o/ah/ot;
+
+PullDnMS.obj:  $(ProPath)PullDnMS.bas
+  BC $(ProPath)PullDnMS /s/o;
+
+FileSort.obj:  $(ProPath)FileSort.bas
+  BC $(ProPath)FileSort /s/o/ah;
+
+XRef.EXE:  XRef.obj QMap.obj XRefMisc.obj XRefDial.obj PullDnMS.obj \
+           FileSort.obj GetFile.obj Dialog.obj XRefRpt.obj XRef.rsp \
+           XRefMisc.lib Pro.lib
+  LINK @XRef.rsp
+  dir xref.exe

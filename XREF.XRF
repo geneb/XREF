@@ -1,0 +1,556 @@
+PROCEDURE TREE DIAGRAM                                                 Page 1
+XREF.ODB                                                   01-27-1997 11:41:30
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+[MAIN]
+ÃÄÄÄÄAddObjType: external
+ÃÄÄÄÄBarPrint: external
+ÃÄÄÄÄBaseName$: external
+ÃÄÄÄÄBrowseFile: external
+ÃÄÄÄÄBuildTables: external
+ÃÄÄÄÄCreateDatabase: external
+ÃÄÄÄÄDosError%: external
+ÃÄÄÄÄEnterFileName$: external
+ÃÄÄÄÄEraseBasProcTable: external
+ÃÄÄÄÄErrMsg: external
+ÃÄÄÄÄExeName$: external
+ÃÄÄÄÄExist%: external
+ÃÄÄÄÄFClose: external
+ÃÄÄÄÄFCreate: external
+ÃÄÄÄÄFGet: external
+ÃÄÄÄÄFGetA: external
+ÃÄÄÄÄFGetT: external
+ÃÄÄÄÄFileExtension$: xref.bas
+³    ÀÄÄÄÄQInstrB%: external
+ÃÄÄÄÄFLInput$: external
+ÃÄÄÄÄFlushPrnBuffer: xref.bas
+³    ÃÄÄÄÄDosError%: external
+³    ÃÄÄÄÄErrorPrompt%: external
+³    ÃÄÄÄÄFPut: external
+³    ÃÄÄÄÄSetError: external
+³    ÀÄÄÄÄWhichError%: external
+ÃÄÄÄÄFOpen: external
+ÃÄÄÄÄFPut: external
+ÃÄÄÄÄFPutA: external
+ÃÄÄÄÄFPutT: external
+ÃÄÄÄÄGetDBStats: external
+ÃÄÄÄÄGetFile: external
+ÃÄÄÄÄGetRange: external
+ÃÄÄÄÄHideCursor: external
+ÃÄÄÄÄInitBasProcTable: external
+ÃÄÄÄÄInitMouse: external
+ÃÄÄÄÄInitOutDev: xref.bas
+³    ÃÄÄÄÄAlertUser%: external
+³    ÃÄÄÄÄExist%: external
+³    ÃÄÄÄÄFCreate: external
+³    ÃÄÄÄÄFLof&: external
+³    ÃÄÄÄÄFOpen: external
+³    ÃÄÄÄÄFSeek: external
+³    ÃÄÄÄÄPrint2Buffer: xref.bas
+³    ³    ÀÄÄÄÄFlushPrnBuffer: xref.bas
+³    ÀÄÄÄÄTranslatePrnSetUp$: external
+ÃÄÄÄÄListExternal2Range: external
+ÃÄÄÄÄMouseTrap: external
+ÃÄÄÄÄMQPrint: external
+ÃÄÄÄÄMScrnRest: external
+ÃÄÄÄÄMScrnSave: external
+ÃÄÄÄÄParseString$: external
+ÃÄÄÄÄParsPath$: external
+ÃÄÄÄÄPeek1%: external
+ÃÄÄÄÄPower2&: external
+ÃÄÄÄÄPrint2Buffer: xref.bas
+PROCEDURE TREE DIAGRAM                                                 Page 2
+XREF.ODB                                                   01-27-1997 11:41:30
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ÃÄÄÄÄPrintFootNote: xref.bas
+³    ÃÄÄÄÄFlushPrnBuffer: xref.bas
+³    ÀÄÄÄÄPrint2Buffer: xref.bas
+ÃÄÄÄÄPrintHeader: xref.bas
+³    ÀÄÄÄÄPrintLine: xref.bas
+³         ÃÄÄÄÄParseString$: external
+³         ÃÄÄÄÄPrint2Buffer: xref.bas
+³         ÃÄÄÄÄPrintFootNote: xref.bas
+³         ÀÄÄÄÄPrintHeader: xref.bas
+ÃÄÄÄÄPrintLine: xref.bas
+ÃÄÄÄÄPrnKeyWords: external
+ÃÄÄÄÄPrnObjDetail: external
+ÃÄÄÄÄPrnObjSummary: external
+ÃÄÄÄÄPrnProcObjs: external
+ÃÄÄÄÄProcTree: external
+ÃÄÄÄÄPullDnMs: external
+ÃÄÄÄÄPullMenKey%: external
+ÃÄÄÄÄSelectObjTypes: external
+ÃÄÄÄÄSetCursor: external
+ÃÄÄÄÄSetExtensions: external
+ÃÄÄÄÄSetMenuState: xref.bas
+³    ÃÄÄÄÄPower2&: external
+³    ÀÄÄÄÄSetStatus: external
+ÃÄÄÄÄSetOptions: external
+ÃÄÄÄÄSetUpExtractText: external
+ÃÄÄÄÄSetUpPrinter: external
+ÃÄÄÄÄSetupProcTree: external
+ÃÄÄÄÄSetUpSourceListing: external
+ÃÄÄÄÄShowCursor: external
+ÃÄÄÄÄShowFileName: xref.bas
+³    ÀÄÄÄÄMQPrint: external
+ÃÄÄÄÄSXRBaner: external
+ÃÄÄÄÄSXRInfo: external
+ÃÄÄÄÄSXRScrn: external
+ÃÄÄÄÄTextCursor: external
+ÃÄÄÄÄTranslatePrnSetUp$: external
+ÀÄÄÄÄWait4DblClick: xref.bas
+     ÃÄÄÄÄASCII%: external
+     ÃÄÄÄÄButtonPress: external
+     ÃÄÄÄÄGetCursor: external
+     ÀÄÄÄÄPDQTimer&: external
+BASIC KEYWORD USAGE TABLE                                                                                                   Page 3
+XREF.ODB                                                                                                        01-27-1997 11:41:30
+
+pf Key Word     # of uses  pf Key Word     # of uses  pf Key Word     # of uses  pf Key Word     # of uses
+ÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   "                  161     COMMAND$             1     EXIT SUB             3     OR                   8
+   '                  347     COMMON               6     FOR                  6     REDIM                6
+   *                   22     COMMON SHARED        1     FRE                  2     RETURN               7
+   +                   77     CONST               20     FUNCTION             2     RIGHT$               1
+   -                   79     CSRLIN               2     GOSUB               15     RSET                 2
+   :                    8     DATE$                1     GOTO                10     RTRIM$               3
+   <                   30     DECLARE FUNCTION    30     IF                 116     SELECT CASE         14
+   =                  476     DECLARE SUB         60     INKEY$               1     SGN                  1
+   >                   34     DEFINT               1     INSTR                8     SHARED              20
+   ABS                  3     DIM                  5     IS                   1     SHELL                1
+   AND                 38     DO                   9     KILL                 3     SPACE$              13
+   AS                   3     ELSE                25     LEFT$                5     STATIC              10
+   AS INTEGER          48     ELSEIF               5     LEN                 28     STR$                 5
+   AS LONG              9     END                  1     LOCATE              17     STRING$              4
+   AS STRING            5     END FUNCTION         2     LOOP                 2     SUB                 12
+   ASC                  2     END IF              96     LOOP UNTIL           3     THEN               120
+   BYVAL                5     END SELECT          14     LOOP WHILE           4     TIME$                1
+   CALL                 4     END SUB             12     LSET                 2     TO                   6
+   CASE                51     END TYPE             3     LTRIM$               1     TYPE                 3
+   CASE ELSE           11     ERASE                4     MID$                14     UBOUND               2
+   CHR$                13     EXIT DO              4     MOD                 10     UCASE$               7
+p  CLEAR                1     EXIT FOR             2     NEXT                 6     XOR                  3
+   CLOSE                2     EXIT FUNCTION        1     NOT                  5     \                   11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(p) = Unsupported P.D.Q. keyword,  (f) Floating point keyword
+OBJECT SUMMARY TABLE                                                    Page 4
+XREF.ODB                                                    01-27-1997 11:41:30
+
+  Object Name                In Procedure   Include               Line #  Refs.
+Ä ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄ ÄÄÄÄÄÄ
+FUNCTIONs:
+  AlertUser% . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  ASCII% . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  BaseName$. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     3
+  DosError%. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     4
+  EnterFileName$ . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  ErrorMsg$. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  ErrorPrompt% . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  ExeName$ . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  Exist% . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     5
+  FileExtension$ . . . . . . . . . . . . .   . . . . . . . . . . .  1324     3
+  FLInput$ . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     8
+  FLof&. . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  GetNybble% . . . . . . . . . . . . . . .   . . . . . . . . . . .  1369     0*
+  InCount% . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     0*
+  InstrTbl%. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     0*
+  MakeDottedLine$. . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  MaxInt%. . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     0*
+  MinInt%. . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  NoPath$. . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     0*
+  NotInstr%. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     0*
+  ParseString$ . . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  ParsPath$. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     3
+  PDQTimer&. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  Peek1% . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  Power2&. . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0    17
+  PullMenKey%. . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  QInstrB% . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  QPValI%. . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     0*
+  TranslatePrnSetUp$ . . . . . . . . . . .   . . . . . . . . . . .     0     3
+  WhichError%. . . . . . . . . . . . . . .   . . . . . . . . . . .     0     3
+
+SUB Programs:
+  AddObjType . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     5
+  BarPrint . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  Box0 . . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     0*
+  BrowseFile . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  BuildTables. . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  ButtonPress. . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  CreateDatabase . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  EraseBasProcTable. . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  ErrMsg . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     6
+  FatalError . . . . . . . . . . . . . . .   . . . . . . . . . . .  1310     0*
+  FClose . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     7
+  FCreate. . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     3
+  FGet . . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  FGetA. . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  FGetT. . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0    19
+  FlushPrnBuffer . . . . . . . . . . . . .   . . . . . . . . . . .  1335     3
+  FOpen. . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     4
+  FPut . . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0    11
+  FPutA. . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  FPutT. . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0    19
+  FSeek. . . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  GetCursor. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+
+ * Object was defined but never used.
+OBJECT SUMMARY TABLE                                                    Page 5
+XREF.ODB                                                    01-27-1997 11:41:30
+
+  Object Name                In Procedure   Include               Line #  Refs.
+Ä ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄ ÄÄÄÄÄÄ
+SUB Programs continued.
+  GetDBStats . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  GetFile. . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     3
+  GetRange . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  HideCursor . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     3
+  InitBasProcTable . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  InitMouse. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  InitOutDev . . . . . . . . . . . . . . .   . . . . . . . . . . .  1388     1
+  ListExternal2Range . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  MouseTrap. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  MQPrint. . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0    17
+  MScrnRest. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     3
+  MScrnSave. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     3
+  Print2Buffer . . . . . . . . . . . . . .   . . . . . . . . . . .  1465     9
+  PrintFootNote. . . . . . . . . . . . . .   . . . . . . . . . . .  1479     3
+  PrintHeader. . . . . . . . . . . . . . .   . . . . . . . . . . .  1514     2
+  PrintLine. . . . . . . . . . . . . . . .   . . . . . . . . . . .  1543     2
+  PrnKeyWords. . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  PrnObjDetail . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  PrnObjSummary. . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  PrnProcObjs. . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  ProcTree . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  PullDnMs . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     6
+  SelectObjTypes . . . . . . . . . . . . .   . . . . . . . . . . .     0     4
+  SetCursor. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  SetError . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  SetExtensions. . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  SetMenuState . . . . . . . . . . . . . .   . . . . . . . . . . .  1595     1
+  SetNybble. . . . . . . . . . . . . . . .   . . . . . . . . . . .  1678     0*
+  SetOptions . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  SetStatus. . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  SetUpExtractText . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  SetUpPrinter . . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  SetupProcTree. . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  SetUpSourceListing . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  ShowCursor . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     3
+  ShowFileName . . . . . . . . . . . . . .   . . . . . . . . . . .  1702     6
+  SXRBaner . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     2
+  SXRInfo. . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  SXRScrn. . . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  TextCursor . . . . . . . . . . . . . . .   . . . . . . . . . . .     0     1
+  UpdateTabCon . . . . . . . . . . . . . .   . . . . . . . . . . .  1727     0*
+  Wait4DblClick. . . . . . . . . . . . . .   . . . . . . . . . . .  1758     2
+
+Labels:
+  CloseBrowse. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1304     3
+  DoBrowse . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1259     4
+  DoReport . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   822     4
+  EndProgram . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   810     2
+  ErrExit. . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1137    14
+  LoadConfigFile . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1187     4
+
+
+
+
+
+ * Object was defined but never used.
+OBJECT SUMMARY TABLE                                                    Page 6
+XREF.ODB                                                    01-27-1997 11:41:30
+
+  Object Name                In Procedure   Include               Line #  Refs.
+Ä ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄ ÄÄÄÄÄÄ
+Named CONSTants:
+  Atrb%. . . . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    24     1*
+  Automatic% . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    20     1*
+  BASIC% . . . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .     6     1*
+  Commn% . . . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    23     1*
+  Constant%. . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    12     1*
+  DefFnProc% . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .     7     1*
+  DimType% . . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    25     1*
+  False% . . . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .     2     6
+  FarArray%. . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    17     1*
+  FarTypeArray%. . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    18     1*
+  FuncProc%. . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .     8     1*
+  Label% . . . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    10     1*
+  NameLen% . . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .     4     1*
+  NearArray% . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    15     1*
+  NearTypeArray% . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    16     1*
+  NumConst%. . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    11     1*
+  Parameter% . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    21     1*
+  Simple%. . . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    13     1*
+  SimpleType%. . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .    14     1*
+  SubProc% . . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .     9     1*
+  True%. . . . . . . . . . . [MAIN]. . . .  XREFCNST.BI. . . . . .     2     6
+
+Simple Variables:
+  Action%. . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   461    12
+  BasSpec$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   354     3
+  BrAction%. . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   580     3
+  BrowseFileName$. . . . . . [MAIN]. . . .   . . . . . . . . . . .   576     9
+  BrowseSpec$. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   454     2
+  Buf$ . . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1190    14
+  CFXSpec$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   353     2
+  Choice%. . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   476    26
+  Cmd$ . . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   282    14
+  CnfName$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   399    24
+  CrL% . . . . . . . . . . . Print2Buffer.   . . . . . . . . . . .     2     2
+  CrLf$. . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   394    11
+  CurPos%. . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   412     4
+  CurPos%. . . . . . . . . . PrintLine . .   . . . . . . . . . . .    21     5
+  CurPosWas% . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   414     2
+  Delim$ . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   411     2
+  DetObjTypes& . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   337     8
+  Device$. . . . . . . . . . InitOutDev. .   . . . . . . . . . . .    21    10
+  DidRead% . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   918     2
+  Dif% . . . . . . . . . . . ShowFileName.   . . . . . . . . . . .     8     2
+  DoRead%. . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   427     8
+  DosRow%. . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   276     4
+  ErrCode% . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1099     3
+  ExtrnObjTypes& . . . . . . [MAIN]. . . .   . . . . . . . . . . .   346     7
+  FileName$. . . . . . . . . [MAIN]. . . .  XREFCOMN.BI. . . . . .     7    39
+  FileName$. . . . . . . . . FileExtension$  . . . . . . . . . . .     2     4
+  FileName$. . . . . . . . . ShowFileName.   . . . . . . . . . . .     2     3
+  FileWas$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   523     6
+  Four%. . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   149    15
+  Handle%. . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   599    62
+  HelpBuf$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   392     5
+
+ * Object was defined but never used.
+OBJECT SUMMARY TABLE                                                    Page 7
+XREF.ODB                                                    01-27-1997 11:41:30
+
+  Object Name                In Procedure   Include               Line #  Refs.
+Ä ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄ ÄÄÄÄÄÄ
+Simple Variables continued.
+  HiByte%. . . . . . . . . . SetNybble . .   . . . . . . . . . . .     6     4
+  HiNybble%. . . . . . . . . SetNybble . .   . . . . . . . . . . .     7     4
+  HiRange% . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   545     5
+  IntArray%. . . . . . . . . GetNybble%. .   . . . . . . . . . . .     2     5
+  IntArray%. . . . . . . . . SetNybble . .   . . . . . . . . . . .     2    13
+  Ky$. . . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   476    21
+  Ky$. . . . . . . . . . . . Wait4DblClick   . . . . . . . . . . .     2     3
+  Ky1% . . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1268    10
+  Length%. . . . . . . . . . PrintLine . .   . . . . . . . . . . .    28     3
+  Length%. . . . . . . . . . ShowFileName.   . . . . . . . . . . .     4     6
+  LineLen% . . . . . . . . . UpdateTabCon.   . . . . . . . . . . .    15     3
+  LoByte%. . . . . . . . . . SetNybble . .   . . . . . . . . . . .    14     4
+  LoNybble%. . . . . . . . . SetNybble . .   . . . . . . . . . . .    11     4
+  LowRange%. . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   545     5
+  MakSpec$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   355     4
+  MenHelp$ . . . . . . . . . SetMenuState.   . . . . . . . . . . .    24     3
+  Menu%. . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   476    13
+  Mono%. . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   287    10
+  Msg$ . . . . . . . . . . . FatalError. .   . . . . . . . . . . .     8     2
+  N% . . . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   891    16
+  N% . . . . . . . . . . . . FileExtension$  . . . . . . . . . . .     6     3
+  N% . . . . . . . . . . . . FlushPrnBuffer  . . . . . . . . . . .    12     3
+  N% . . . . . . . . . . . . PrintFootNote   . . . . . . . . . . .    19     2
+  N% . . . . . . . . . . . . PrintHeader .   . . . . . . . . . . .    25     3
+  N% . . . . . . . . . . . . SetMenuState.   . . . . . . . . . . .    29     6
+  NoHi%. . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   284     5
+  NoKeyWords%. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   892     6
+  NoNumConst%. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   898    10
+  ObjFile$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   916     3
+  ODBExtension$. . . . . . . [MAIN]. . . .   . . . . . . . . . . .   350    10
+  OdbSpec$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   453     3
+  Ok2Run%. . . . . . . . . . SetMenuState.   . . . . . . . . . . .    55     4
+  One% . . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   147    32
+  Opn% . . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   854     5
+  OutDev%. . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   322    14
+  OutDev%. . . . . . . . . . InitOutDev. .   . . . . . . . . . . .     7     4
+  OutDevName$. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   424     8
+  Page$. . . . . . . . . . . PrintHeader .   . . . . . . . . . . .    14     4
+  PageTitle$ . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   631     4
+  PathWas$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   559     3
+  PgNo$. . . . . . . . . . . UpdateTabCon.   . . . . . . . . . . .    23     3
+  PrevChoice%. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   480     3
+  PrevLen% . . . . . . . . . ShowFileName.   . . . . . . . . . . .     8     3
+  PrevMenu%. . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   480     5
+  PrevOutDev%. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   323     4
+  PrevPsn% . . . . . . . . . ShowFileName.   . . . . . . . . . . .    11     2
+  Prn1BotMarg% . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   367     5
+  Prn1LeftMarg%. . . . . . . [MAIN]. . . .   . . . . . . . . . . .   363     5
+  Prn1Length%. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   365     5
+  Prn1Reset$ . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   360     5
+  Prn1SetUp$ . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   358     5
+  Prn1Width% . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   361     5
+  Prn2BotMarg% . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   368     5
+  Prn2LeftMarg%. . . . . . . [MAIN]. . . .   . . . . . . . . . . .   364     5
+OBJECT SUMMARY TABLE                                                    Page 8
+XREF.ODB                                                    01-27-1997 11:41:30
+
+  Object Name                In Procedure   Include               Line #  Refs.
+Ä ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄ ÄÄÄÄÄÄ
+Simple Variables continued.
+  Prn2Length%. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   366     5
+  Prn2Reset$ . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   630     4
+  Prn2SetUp$ . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   359     5
+  Prn2Width% . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   362     5
+  PrnBuffer$ . . . . . . . . FlushPrnBuffer  . . . . . . . . . . .     4    11
+  PrnHandle% . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1149     7
+  PrnLine$ . . . . . . . . . PrintLine . .   . . . . . . . . . . .    17     4
+  ProcName$. . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   724     4
+  ProcNo%. . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   984     2
+  ProcObjTypes&. . . . . . . [MAIN]. . . .   . . . . . . . . . . .   340     8
+  Psn% . . . . . . . . . . . GetNybble%. .   . . . . . . . . . . .     2     2
+  Psn% . . . . . . . . . . . SetNybble . .   . . . . . . . . . . .     2     2
+  Psn% . . . . . . . . . . . ShowFileName.   . . . . . . . . . . .     6     4
+  RefFile$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   916     3
+  Reserved%. . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   625     2
+  RptTypes&. . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   326    28
+  SetUp$ . . . . . . . . . . InitOutDev. .   . . . . . . . . . . .    55     4
+  SortByType%. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   992     3
+  Spec$. . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   527     9
+  St%. . . . . . . . . . . . PrintLine . .   . . . . . . . . . . .    27     6
+  SumObjTypes& . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   329    10
+  T& . . . . . . . . . . . . Wait4DblClick   . . . . . . . . . . .     5     2
+  Temp$. . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1018     5
+  Temp$. . . . . . . . . . . PrintLine . .   . . . . . . . . . . .    23     5
+  Temp%. . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1279     3
+  Temp%. . . . . . . . . . . GetNybble%. .   . . . . . . . . . . .     6     6
+  Temp%. . . . . . . . . . . InitOutDev. .   . . . . . . . . . . .    33     2
+  Temp%. . . . . . . . . . . Wait4DblClick   . . . . . . . . . . .     7     5
+  Text$. . . . . . . . . . . Print2Buffer.   . . . . . . . . . . .     2     4
+  Text$. . . . . . . . . . . PrintFootNote   . . . . . . . . . . .    14     3
+  Text$. . . . . . . . . . . UpdateTabCon.   . . . . . . . . . . .    12     3
+  TextExtension$ . . . . . . [MAIN]. . . .   . . . . . . . . . . .   352     6
+  Two% . . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   148    29
+  TxtFile$ . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   907     3
+  UnObjTypes&. . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   339     8
+  Value% . . . . . . . . . . SetNybble . .   . . . . . . . . . . .     2     5
+  Wdth%. . . . . . . . . . . PrintLine . .   . . . . . . . . . . .    20     3
+  Word$. . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   416     5
+  XrfExtension$. . . . . . . [MAIN]. . . .   . . . . . . . . . . .   351     7
+  Zero%. . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   146    10
+
+Simple Type Variables:
+  Inf. . . . . . . . . . . . [MAIN]. . . .  XREFCOMN.BI. . . . . .     1   165
+  ObjInf.. . . . . . . . . . [MAIN]. . . .  XREFCOMN.BI. . . . . .     2     1*
+  Ref. . . . . . . . . . . . [MAIN]. . . .  XREFCOMN.BI. . . . . .     3     1*
+
+Static Arrays:
+  DosScr%(). . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   277     5
+  Header$(). . . . . . . . . PrintHeader .   . . . . . . . . . . .    12     7
+  Header$(). . . . . . . . . PrintLine . .   . . . . . . . . . . .    17     3
+  Menu$(). . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   169    55
+  MenuHelp$(). . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   171    26
+  Stat%(). . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   170    28
+
+
+ * Object was defined but never used.
+OBJECT SUMMARY TABLE                                                    Page 9
+XREF.ODB                                                    01-27-1997 11:41:30
+
+  Object Name                In Procedure   Include               Line #  Refs.
+Ä ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÄ ÄÄÄÄÄÄ
+Dynamic Arrays:
+  Header$(). . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .  1123     3
+  Incl$(). . . . . . . . . . [MAIN]. . . .  XREFCOMN.BI. . . . . .     4     4
+  Make$(). . . . . . . . . . [MAIN]. . . .  XREFCOMN.BI. . . . . .     4     5
+  ObjType$() . . . . . . . . [MAIN]. . . .  XREFCOMN.BI. . . . . .     6    20
+  Scr%() . . . . . . . . . . [MAIN]. . . .   . . . . . . . . . . .   659     4
+  TabCon$(). . . . . . . . . [MAIN]. . . .  XREFCOMN.BI. . . . . .     5    19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * Object was defined but never used.
+CROSS REFERENCE - TABLE OF CONTENTS
+
+For file: D:\XREF\XREF.BAS
+01-27-1997 11:41:30
+                                                                        Page #
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Procedure Tree . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     1
+
+Object Summary Report
+    BASIC Keywords . . . . . . . . . . . . . . . . . . . . . . . . . . .     3
+    FUNCTIONs  . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     4
+    SUB Programs . . . . . . . . . . . . . . . . . . . . . . . . . . . .     4
+    Labels . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     5
+    Named CONSTants  . . . . . . . . . . . . . . . . . . . . . . . . . .     6
+    Simple Variables . . . . . . . . . . . . . . . . . . . . . . . . . .     6
+    Simple Type Variables  . . . . . . . . . . . . . . . . . . . . . . .     8
+    Static Arrays  . . . . . . . . . . . . . . . . . . . . . . . . . . .     8
+    Dynamic Arrays . . . . . . . . . . . . . . . . . . . . . . . . . . .     9
+
+

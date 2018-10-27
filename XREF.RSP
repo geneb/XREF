@@ -1,0 +1,24 @@
+/e/noe/seg:400 XRef.obJ+
+XRef.ob$+
+XRefMisc.obJ+
+XRefMisc.ob$+
+XRefDial.obJ+
+XRefDial.ob$+
+GetFile.obJ+
+GetFile.ob$+
+Dialog.obJ+
+Dialog.ob$+
+XRefRpt.obJ+
+XRefRpt.ob$+
+QMap.obj+
+FileSort.obJ+
+PullDnMS.obJ+
+s2ckrnl.obj+
+d:\bc7\lib\smallerr+
+d:\bc7\lib\nocom+
+d:\bc7\lib\nofltin+
+d:\bc7\lib\noedit+
+d:\bc7\lib\tscnionr,
+xref.exe,
+nul,
+pro XRefMisc;

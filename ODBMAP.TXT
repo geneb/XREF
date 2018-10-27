@@ -1,0 +1,139 @@
+OBJECT DATABASE (.ODB) layout for the XREF program.
+
+BOF
+
+ID string
+здддддддддддд©
+ЁXrfDataBase~Ё     ~ = CHR$(26) EOF
+юдддддддддддды
+12 bytes
+********************************************************************
+Number of Modules
+здд©
+Ё 2Ё                 = Inf.Modules
+юдды
+Start of Module Names data (0 based offset into file)
+здддд©
+Ё   4Ё               = Inf.ModuleData
+юдддды
+********************************************************************
+Number of Include Files
+здд©
+Ё 2Ё                 = Inf.Incs
+юдды
+Start of Include File Names data (0 based offset into file)
+здддд©
+Ё   4Ё               = Inf.IncData
+юдддды
+********************************************************************
+Number of Objects
+здд©
+Ё 2Ё                 = Inf.Objects
+юдды
+Start of Objects Table data (0 based offset into file)
+здддд©
+Ё   4Ё               = Inf.ObjData
+юдддды
+Start of Index sorted by NAME (0 based offset into file)
+здддд©
+Ё   4Ё               = Inf.NameData
+юдддды
+Start of Index sorted by TYPE, NAME (0 based offset into file)
+здддд©
+Ё   4Ё               = Inf.TypeNameData
+юдддды
+********************************************************************
+Number of References
+здддд©
+Ё   4Ё               = Inf.ObjRefs
+юдддды
+Start of Reference table data (0 based offset into file)
+здддд©
+Ё   4Ё               = Inf.RefData
+юдддды
+********************************************************************
+                      Start of Table Data
+********************************************************************
+
+OBJECT INFORMATION  (ObjInf.)
+зддддддддддддддддддддддддддддддддддддддддбддбддбддбддбддбддбддбдддд©
+Ё 40 bytes                               Ё 2Ё 2Ё 2Ё 2Ё 2Ё 2Ё 2Ё   4Ё
+цддддддддддддддддддддддддддддддддддддддддеддеддеддеддеддеддеддедддд╢
+  (.OName) Object Name                    Ё  Ё  Ё  Ё  Ё  Ё  Ё  Ё
+  (.OType)                   Object Type ды  Ё  Ё  Ё  Ё  Ё  Ё  Ё
+  (.Flag)                          Flags дддды  Ё  Ё  Ё  Ё  Ё  Ё
+  (.Share)                         Flags ддддддды  Ё  Ё  Ё  Ё  Ё
+  (.DefModInc)       Module/Include Name дддддддддды  Ё  Ё  Ё  Ё
+  (.InProcNo) "Used in" Procedure Number ддддддддддддды  Ё  Ё  Ё
+  (.OnLineNo)             On Line Number дддддддддддддддды  Ё  Ё
+  (.NumRefs)        Number of References ддддддддддддддддддды  Ё
+  (.FirstRef)   First reference record # дддддддддддддддддддддды
+                            .  .
+                            .  .
+цддддддддддддддддддддддддддддддддддддддддеддеддеддеддеддеддеддедддд╢
+Ё                                        Ё  Ё  Ё  Ё  Ё  Ё  Ё  Ё    Ё
+юддддддддддддддддддддддддддддддддддддддддаддаддаддаддаддаддаддадддды
+                  58 bytes total record length
+********************************************************************
+Record Pointer Index sorted by NAME
+здддд©
+Ё   4Ё
+цдддд╢
+  ..
+цдддд╢
+Ё    Ё
+юдддды
+********************************************************************
+Record Pointer Index sorted by TYPE, NAME
+здддд©
+Ё   4Ё
+цдддд╢
+  ..
+цдддд╢
+Ё    Ё
+юдддды
+********************************************************************
+REFERENCE INFORMATION  (Ref.)
+зддбдбдбддбддбдбдддд©
+Ё 2Ё1Ё1Ё 2Ё 2Ё1Ё   4Ё
+цддедедеддеддедадддд╢
+ Ё  Ё Ё Ё  Ё  Ё Ё
+ Ё  Ё Ё Ё  Ё  Ё юдддд (.NextRef)    Next Reference's Record #
+ Ё  Ё Ё Ё  Ё  юдддддд (.Assign)     Assignment flag
+ Ё  Ё Ё Ё  юддддддддд (.LineNo)     On Line Number
+ Ё  Ё Ё юдддддддддддд (.InProcNo)   Within Procedure Number
+ Ё  Ё юдддддддддддддд (.Include)    Referenced in Include File Number
+ Ё  юдддддддддддддддд (.Module)         "         Module Number
+ юддддддддддддддддддд (.ObjNo)      Object Number
+        .  .
+        .  .
+
+цддедедеддеддедбдддд╢
+Ё  Ё Ё Ё  Ё  Ё Ё    Ё
+юддадададдаддададддды
+13 bytes total length
+********************************************************************
+MODULE INFORMATION  (Make$())
+Variable length
+зддддд/ /дддддбдбд©
+ЁModule Name 1ЁCЁLЁ
+цддддд/ /дддддедед╢
+ . .           . .
+ . .           . .
+цддддд/ /дддддедед╢
+ЁModule Name nЁCЁLЁ
+юддддд/ /дддддадады
+**********************************************************************
+INCLUDE FILE INFORMATION  (Incl$())
+Variable length
+зддддд/ /ддддддбдбд©
+ЁInclude Name 1ЁCЁLЁ
+цддддд/ /ддддддедед╢
+ . .            . .
+ . .            . .
+цддддд/ /ддддддедед╢
+ЁInclude Name nЁCЁLЁ
+юддддд/ /ддддддадады
+
+
+END OF FILE
